@@ -337,10 +337,471 @@ template {
   display: none;
 }
 
-.navbar {
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+h4 {
+  text-align: center;
+  background-color: #2e1503;
+  color: #FFFFFF;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.15rem;
+}
+
+h5 {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.1rem;
+}
+
+.course__beginner--instructor {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 2rem;
+}
+
+.course__style--instructor {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 2rem;
+}
+
+.contact__list a {
+  color: #000000;
+  font-family: 700;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footer__extras a {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media (screen-width: 768px) {
+  h5 {
+    font-size: 12px;
+  }
+}
+.footer__button {
+  border-radius: 4px;
+  background-color: #FFAF6D;
+  color: #2e1503;
+}
+
+.footer__input {
+  width: 150px;
+  border-radius: 7px;
+}
+
+.phone {
+  width: 40%;
+}
+.phone__gears {
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0turn);
+    transform-origin: 79% 79%;
+  }
+  100% {
+    transform: rotate(1turn);
+    transform-origin: 79% 79%;
+  }
+}
+.phone__code {
+  animation: move 6s linear infinite;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  75% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+/* GRID ROW CLASSES */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* GRID COLUMN CLASSES */
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+/* GRID COLUMN RESPONSIVE SM CLASSES */
+@media (min-width: 576px) {
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+
+  .col-sm-12 {
+    grid-column: span 12;
+  }
+}
+/* GRID COLUMN RESPONSIVE MD CLASSES  */
+@media (min-width: 768px) {
+  .col-md-1 {
+    grid-column: span 1;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .col-md-12 {
+    grid-column: span 12;
+  }
+}
+/* GRID COLUMN RESPONSIVE MD CLASSES  */
+@media (min-width: 992px) {
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+}
+.footer {
+  background-color: #000000;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+}
+.footer__extras {
+  display: flex;
+  padding-top: 1.5rem;
+}
+.footer__links {
+  padding-right: 1rem;
+}
+.footer__links:hover {
+  color: #FFA500;
+  transition: 0.2s;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 0.5rem 1rem;
+  }
+  .footer__links {
+    padding-right: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__links {
+    padding-bottom: 0.5rem;
+  }
+  .footer__extras {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.principal {
+  height: 65vh;
+  background-image: url(/assets/img/desarrolloweb2021t-op.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media (max-width: 768px) {
+  .principal {
+    height: 50vh;
+  }
+}
+.course {
+  border: 0.5px solid #000000;
+  padding: 1rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.2rem;
+}
+.course__beginner {
+  padding: 0.5rem;
+  border: dashed 1px #060606;
+  margin-bottom: 1.5rem;
+}
+.course__beginner--header {
   width: 100%;
+}
+.course__interactions {
+  display: flex;
+  justify-content: flex-start;
+}
+.course__interactions i {
+  padding-right: 0.5rem;
+}
+.course__styles {
+  padding: 0.5rem;
+  border: dashed 1px #060606;
+  margin-bottom: 2rem;
+}
+.course__styles--header {
+  width: 100%;
+}
+
+.contact {
+  border: 0.5px solid #000000;
+  padding: 1rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.2rem;
+}
+.contact__head {
+  width: 30%;
+  border-radius: 50%;
+  border: 2px solid #060606;
+}
+.contact__info {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__icons i {
+  padding-right: 0.5rem;
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 0.5rem 0.4rem;
+  }
+
+  .course {
+    margin: 0.5rem 0.4rem;
+  }
+}
+.navbar {
   background-color: #000000;
   color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__items {
+  padding-top: 0.3rem;
+}
+.navbar__link {
+  padding-right: 0.8rem;
+}
+.navbar__link:hover {
+  color: #FFA500;
+  transition: 0.2s;
+}
+.navbar__button {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

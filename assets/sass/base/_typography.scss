@@ -1,0 +1,71 @@
+a {
+    text-decoration: none;
+    color: $white;
+    font-family: $poppins;
+    font-size: $small;
+    font-weight: $poppins-bold;
+}
+
+h3 {
+    font-family: $ubuntu;
+    font-weight: $ubuntu-bold;
+    font-size: $large;
+}
+
+h4 {
+    text-align: center;
+    background-color: $charcoal;
+    color: $white;
+    font-family: $ubuntu;
+    font-size: $medium;
+    font-weight: $ubuntu-bold;
+    padding: .15rem;
+}
+
+h5 {
+    color: $white;
+    font-family: $poppins;
+    font-weight: $poppins-regular;
+    font-size: $small;
+}
+
+p{
+    font-family: $ubuntu;
+    font-weight: $ubuntu-bold;
+    font-size: $x-small; 
+    line-height: 1.1rem;
+}
+.course__beginner--instructor {
+    font-family: $ubuntu;
+    font-weight: $ubuntu-bold;
+    font-size: $small; 
+    padding-top: 2rem;    
+}
+
+.course__style--instructor {
+    font-family: $ubuntu;
+    font-weight: $ubuntu-bold;
+    font-size: $small; 
+    padding-top: 2rem;    
+}
+
+.contact__list a{
+    color: $black;
+    font-family: $ubuntu-bold;
+    font-weight: $ubuntu-regular;
+    font-size: $medium;
+    
+}
+
+.footer__extras a{
+    color: $white;
+    font-family: $poppins;
+    font-weight: $poppins-regular;
+    font-size: $small;
+}
+
+@media (screen-width: $breakpoint-md){
+    h5 {
+        font-size: $x-small;
+    }
+}

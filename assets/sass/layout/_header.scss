@@ -1,0 +1,12 @@
+.principal {
+    height: 65vh;
+    background-image: url(/assets/img/desarrolloweb2021t-op.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+@media (max-width: $breakpoint-md){
+    .principal {
+        height: 50vh;
+    }
+}

@@ -1,5 +1,29 @@
 .navbar {
-    width: 100%;
     background-color: $black;
     color: $white;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    // &__logo {
+    //     width: auto;
+    // }
+
+    &__items {
+        padding-top: .3rem;
+    }
+    &__link {
+        padding-right: .8rem;
+
+        &:hover {
+            color: $orange;
+            transition: .2s;
+        }
+    }
+
+    &__button {
+        display: none;
+    }
+
+
 }

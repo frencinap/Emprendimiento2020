@@ -1,0 +1,52 @@
+/* GRID ROW CLASSES */
+.container {
+
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* GRID COLUMN CLASSES */
+  
+@for $i from 1 through $grid-cols {
+  
+    .col-#{$i} {  
+      grid-column: span $i;
+    }
+}
+  
+/* GRID COLUMN RESPONSIVE SM CLASSES */
+  
+@include breakpoint(sm) {
+  
+    @for $i from 1 through $grid-cols {
+
+      .col-sm-#{$i} {
+        grid-column: span $i;
+      }
+    }
+}
+  
+/* GRID COLUMN RESPONSIVE MD CLASSES  */
+  
+@include breakpoint(md) {
+  
+    @for $i from 1 through $grid-cols {
+  
+      .col-md-#{$i} {
+        grid-column: span $i;
+      }
+    }
+}
+  
+/* GRID COLUMN RESPONSIVE MD CLASSES  */
+  
+@include breakpoint(lg) {
+  
+    @for $i from 1 through $grid-cols {
+  
+      .col-lg-#{$i} {
+        grid-column: span $i;
+  
+      }
+    }
+}

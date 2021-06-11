@@ -1,0 +1,76 @@
+
+.course {
+    border: .5px solid $black;
+    padding: 1rem .5rem;
+    margin-right: .5rem;
+    margin-left: .2rem;
+
+    &__beginner{
+        padding: .5rem;
+        border: dashed 1px $sable;
+        margin-bottom: 1.5rem;
+
+        &--header {
+            width: 100%;
+        }
+    }
+
+    &__interactions {
+        display: flex;
+        justify-content: flex-start;
+
+        & i{
+            padding-right: .5rem;
+        }
+    }
+
+    &__styles{
+
+        padding: .5rem;
+        border: dashed 1px $sable;
+        margin-bottom: 2rem;
+
+        &--header {
+            width: 100%;
+        }
+    }
+}
+
+.contact {
+    border: .5px solid $black;
+    padding: 1rem .5rem;
+    margin-left: .5rem;
+    margin-right: .2rem;
+
+    &__head{
+        width: 30%;
+        border-radius: 50%;
+        border: 2px solid $sable;
+    }
+
+    &__info {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    &__icons i {
+        padding-right: .5rem;
+    }    
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+@media (max-width: $breakpoint-md) {
+    .contact {
+        margin: .5rem .4rem;
+    }
+    .course {
+        margin: .5rem .4rem;
+    }
+}

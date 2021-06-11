@@ -1,0 +1,41 @@
+.phone {
+    width: 40%;
+
+    &__gears{
+        animation: spin 8s linear infinite;
+			
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0turn);
+			transform-origin: 79% 79%;	
+		}
+        100% {
+            transform: rotate(1turn);
+			transform-origin: 79% 79%;
+        }
+    }
+    &__code {
+        animation: move 6s linear infinite;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(50px);
+        }
+        50%{
+            transform: translateX(-50px);
+        }
+        75% {
+            transform: translateX(-50px);
+        }
+        100% {
+            transform: translateX(50px);
+        }
+        
+    }
+}

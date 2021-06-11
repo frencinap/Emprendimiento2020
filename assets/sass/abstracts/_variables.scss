@@ -6,6 +6,7 @@ $sable: #060606;
 $charcoal: #2e1503;
 $tangerine: #FFAF6D;
 $orange: #FFA500;
+$gray: #dddbdc;
 
 // Fonts
 
@@ -27,3 +28,14 @@ $large: 20px;
 $medium: 16px;
 $small: 14px;
 $x-small: 12px;
+
+// breakpoints
+// breakpoint xs is default (< 576px)
+$breakpoint-sm: 576px; // mobile
+$breakpoint-md: 768px; // tablet
+$breakpoint-lg: 992px; // laptop
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// grid 
+$grid-cols: 12;
