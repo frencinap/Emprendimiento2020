@@ -433,6 +433,7 @@ p {
 @media (max-width: 768px) {
   .footer__button {
     margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
     width: 100px;
   }
 }
