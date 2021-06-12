@@ -339,7 +339,7 @@ template {
 
 a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -353,8 +353,8 @@ h3 {
 
 h4 {
   text-align: center;
-  background-color: #2e1503;
-  color: #FFFFFF;
+  background-color: #301603;
+  color: white;
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -362,7 +362,7 @@ h4 {
 }
 
 h5 {
-  color: #FFFFFF;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -390,14 +390,26 @@ p {
 }
 
 .contact__list a {
-  color: #000000;
+  color: black;
   font-family: 700;
   font-weight: 400;
   font-size: 16px;
 }
 
 .footer__extras a {
-  color: #FFFFFF;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer__input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer__button {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -410,20 +422,33 @@ p {
 }
 .footer__button {
   border-radius: 4px;
-  background-color: #FFAF6D;
-  color: #2e1503;
+  background-color: #ffae6b;
+  color: #301603;
+}
+.footer__button:hover {
+  background-color: white;
+  transition: 0.3s;
 }
 
+@media (max-width: 768px) {
+  .footer__button {
+    margin-top: 0.4rem;
+    width: 100px;
+  }
+}
 .footer__input {
-  width: 150px;
+  width: 160px;
   border-radius: 7px;
+}
+.footer__input:focus {
+  background-color: #ffae6b;
 }
 
 .phone {
-  width: 40%;
+  width: 35%;
 }
 .phone__gears {
-  animation: spin 8s linear infinite;
+  animation: spin 6s linear infinite;
 }
 @keyframes spin {
   0% {
@@ -436,23 +461,14 @@ p {
   }
 }
 .phone__code {
-  animation: move 6s linear infinite;
+  animation: move 5s linear infinite;
 }
 @keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(50px);
-  }
   50% {
-    transform: translateX(-50px);
-  }
-  75% {
-    transform: translateX(-50px);
+    transform: translateX(8rem);
   }
   100% {
-    transform: translateX(50px);
+    transform: translateX(0);
   }
 }
 
@@ -662,7 +678,7 @@ p {
   }
 }
 .footer {
-  background-color: #000000;
+  background-color: black;
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
@@ -676,7 +692,7 @@ p {
   padding-right: 1rem;
 }
 .footer__links:hover {
-  color: #FFA500;
+  color: #ffa600;
   transition: 0.2s;
 }
 
@@ -703,6 +719,7 @@ p {
   .footer__contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 .principal {
@@ -718,14 +735,14 @@ p {
   }
 }
 .course {
-  border: 0.5px solid #000000;
+  border: 0.5px solid black;
   padding: 1rem 0.5rem;
-  margin-right: 0.5rem;
-  margin-left: 0.2rem;
+  margin-right: 0.8rem;
+  margin-left: 0.25rem;
 }
 .course__beginner {
   padding: 0.5rem;
-  border: dashed 1px #060606;
+  border: dashed 1px #050505;
   margin-bottom: 1.5rem;
 }
 .course__beginner--header {
@@ -740,7 +757,7 @@ p {
 }
 .course__styles {
   padding: 0.5rem;
-  border: dashed 1px #060606;
+  border: dashed 1px #050505;
   margin-bottom: 2rem;
 }
 .course__styles--header {
@@ -748,15 +765,15 @@ p {
 }
 
 .contact {
-  border: 0.5px solid #000000;
+  border: 0.5px solid black;
   padding: 1rem 0.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.2rem;
+  margin-left: 0.8rem;
+  margin-right: 0.25rem;
 }
 .contact__head {
   width: 30%;
   border-radius: 50%;
-  border: 2px solid #060606;
+  border: 2px solid #050505;
 }
 .contact__info {
   justify-content: center;
@@ -784,8 +801,8 @@ p {
   }
 }
 .navbar {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: black;
+  color: white;
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -797,11 +814,24 @@ p {
   padding-right: 0.8rem;
 }
 .navbar__link:hover {
-  color: #FFA500;
+  color: #ffa600;
   transition: 0.2s;
 }
 .navbar__button {
   display: none;
+}
+.navbar__button:hover {
+  color: #ffa600;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .navbar__link {
+    display: none;
+  }
+  .navbar__button {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -64,8 +64,20 @@ p{
     font-size: $small;
 }
 
+.footer__input {
+    font-family: $poppins;
+    font-weight: $poppins-regular;
+    font-size: $small;
+}
+.footer__button {
+    font-family: $poppins;
+    font-weight: $poppins-regular;
+    font-size: $small;
+}
+
 @media (screen-width: $breakpoint-md){
     h5 {
         font-size: $x-small;
     }
+
 }

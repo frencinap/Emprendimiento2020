@@ -2,4 +2,16 @@
     border-radius: 4px;
     background-color: $tangerine;
     color: $charcoal;
+
+    &:hover {
+        background-color: $white;
+        transition: .3s;
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .footer__button {
+        margin-top: .4rem;
+        width: 100px;
+    }
 }

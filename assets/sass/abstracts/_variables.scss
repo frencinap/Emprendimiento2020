@@ -1,12 +1,14 @@
 // Colors 
+// Los colores son los que estan definidos en la guia
+// pero personalmente quiero acostumbrarme a usar hsl
 
-$white: #FFFFFF;
-$black: #000000;
-$sable: #060606;
-$charcoal: #2e1503;
-$tangerine: #FFAF6D;
-$orange: #FFA500;
-$gray: #dddbdc;
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$sable: hsl(0, 0%, 2%);
+$charcoal: hsl(25, 88%, 10%);
+$tangerine: hsl(27, 100%, 71%);
+$orange: hsl(39, 100%, 50%);
+$gray: hsl(330, 3%, 86%);
 
 // Fonts
 

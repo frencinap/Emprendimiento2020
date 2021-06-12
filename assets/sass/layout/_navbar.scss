@@ -23,7 +23,25 @@
 
     &__button {
         display: none;
+
+        &:hover {
+            color: $orange;
+            transition: .3s;
+        }
     }
 
 
+}
+
+@media (max-width: $breakpoint-md){
+    .navbar{
+
+        &__link {
+            display: none;
+        }
+
+        &__button {
+            display: block;
+        }
+    }
 }
